@@ -1,6 +1,6 @@
 {
   "name": "nest",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "",
   "author": "",
   "license": "MIT",
@@ -10,7 +10,8 @@
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
     "start:dev": "nodemon app/main.ts",
     "start:debug": "nest start --debug --watch",
-    "start:prod": "node dist/main"
+    "start:prod": "node dist/main",
+    "release": "standard-version"
   },
   "dependencies": {
     "@nestjs/common": "^6.9.0",
@@ -42,9 +43,9 @@
     "@types/supertest": "^2.0.8",
     "babel-plugin-import": "^1.12.2",
     "cz-conventional-changelog": "^3.0.2",
-    "generate-changelog": "^1.8.0",
     "jest": "^24.9.0",
     "prettier": "^1.18.2",
+    "standard-version": "^7.0.1",
     "supertest": "^4.0.2",
     "ts-jest": "^24.1.0",
     "ts-loader": "^6.1.1",
